@@ -1,0 +1,217 @@
+body>div{
+    background-color: red;
+    margin: 10px 0;
+}
+/*高度100，宽度自适应*/
+.autoWidth{
+    height: 100px;
+    width: 100%;
+}
+/*高度100，宽度200，实现水平居中*/
+.center-x-1{
+    height: 100px;
+    width: 200px;
+    margin: auto;
+}
+/*使用display：inline来设置居中*/
+.center-x-2{
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.center-x-2-child{
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    text-align: left;
+    background-color: yellow;
+}
+/*使用position来实现居中*/
+.center-x-3{
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+.center-x-3-child{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    background-color: yellow;
+}
+/*不定宽实现居中*/
+.center-x-4{
+    height: 100px;
+    text-align: center;
+}
+.center-x-4-child{
+    display: inline-block;
+    background-color: yellow;
+    height: 100px;
+}
+/*行内元素垂直居中*/
+.center-y-1{
+    height: 200px;
+}
+.center-y-1-child{
+    background-color: yellow;
+    width: 100px;
+    line-height: 200px;
+}
+/*定高块级元素垂直居中*/
+.center-y-2{
+    height: 200px;
+    position: relative;
+}
+.center-y-2-child{
+    width: 80px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+/*定高块级元素垂直居中*/
+.center-y-3{
+    height: 200px;
+    position: relative;
+}
+.center-y-3-child{
+    width: 80px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+}
+/*边距合并现象*/
+.margin-style{
+    height: 200px;
+}
+.margin-style-child{
+    height: 50px;
+    width: 100px;
+    margin: 25px;
+    background-color: yellow;
+}
+/*浮动元素*/
+.float-l{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    float: left;
+}
+.float-r{
+    height: 100px;
+    width: 100px;
+    background-color:yellow;
+    float: right;
+}
+.clear-float{
+    margin-bottom: 100px;
+}
+/*指定元素高度清除浮动*/
+.clear-float1{
+    height: 100px;
+}
+/*设置overflow：hidden*/
+.clear-float2{
+    overflow: hidden;
+}
+/*使用伪类清除浮动*/
+.clear-float3:after{
+    clear: both;
+    display: block;
+    content: '.';
+    height: 0;
+    visibility: hidden;
+}
+/*全部固定宽度的两列布局*/
+.wrapper{
+    width: 800px;
+    overflow: hidden;
+    margin: 10px auto;
+}
+.sidebar{
+    width: 200px;
+    height: 400px;
+    float: left;
+    background-color: yellow;
+}
+.content{
+    width: 600px;
+    height: 400px;
+    float: left;
+    background-color: brown;
+}
+/*左侧固定右侧自适应两列布局*/
+.wrapper1{
+    width: 920px;
+    margin: 10px 0;
+    overflow: hidden;
+    margin: 10px auto;
+}
+.content-wap{
+    float: left;
+    width: 100%;
+}
+.content1{
+    height: 400px;
+    background-color: brown;
+    margin-left: 200px;
+}
+.sidebar1{
+    float: left;
+    width: 200px;
+    margin-right: -200px;
+    height: 400px;
+    background-color: yellow;
+}
+
+.sidebar2{
+    float: left;
+    width: 200px;
+    margin-left: -920px;
+    height: 400px;
+    background-color: yellow;
+}
+.content4{
+    width: 600px;
+    float: left;
+    margin-left: 200px;
+    height: 400px;
+    background-color: brown;        
+}
+.sidebar4{
+    width: 200px;
+    float: left;
+    height: 400px;
+    background-color: yellow;
+    margin-left: -100%
+}
+.content-wap1{
+    width: 100%;
+    float: left;
+}
+.content5{
+    margin-right: 200px;
+    height: 400px;
+    background-color: brown;
+}
+.slider5{
+    width:200px;
+    float: left;
+    height: 400px;
+    margin-left: -200px;
+    background-color: yellow;
+}
+.slider6{
+    width: 200px;
+    float: right;
+    height: 400px;
+    margin-left: -100%;
+    background-color: yellow;
+}

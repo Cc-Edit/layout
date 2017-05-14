@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>css layout</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+<h1>css布局学习</h1>
+<h3>一、基础</h3>	
+<h4>1.高度100，宽度自适应</h4>			
+<div class="autoWidth"></div>	
+<h4>2.高度100，宽度200，实现水平居中</h4>			
+<div class="center-x-1">方法一：margin:auto;</div>	
+<div class="center-x-2">
+    <div class="center-x-2-child">
+        方法二：text-align 
+    </div>
+</div>  
+<div class="center-x-3">
+    <div class="center-x-3-child">
+        方法三：position 
+    </div>
+</div>  
+<h4>3.高度100，宽度自动，实现水平居中</h4>   
+<div class="center-x-4">
+    <span class="center-x-4-child">
+    撑开宽度撑开宽度撑开宽度撑开宽度撑开宽度撑开宽度
+    </span>
+</div>   
+<h4>4.行内元素实现垂直居中</h4>   
+<div class="center-y-1">
+    <span class="center-y-1-child">撑开内容撑开内容撑开内容撑开内容</span>
+</div>  
+<h4>5.定高块级元素实现垂直居中</h4>   
+<div class="center-y-2">
+    <div class="center-y-2-child">方式一：margin: auto;</div>
+</div>  
+<div class="center-y-3">
+    <div class="center-y-3-child">方式二：position;</div>
+</div>
+<h4>6.边距合并现象</h4>   
+<div class="margin-style">
+     <div class="margin-style-child">margin: 25px;</div>
+     <div class="margin-style-child">margin: 25px;</div>
+     <p>两个垂直外边距相遇时，它们将形成一个外边距。合并后的外边距的高度等于两个发生合并的外边距的高度中的较大者。</p>    
+</div>  
+<h4>7.清除浮动</h4>   
+<div class="clear-float">
+子元素有高度，但是因为float属性，导致父元素没有被撑开。
+     <div class="float-l">float:left;</div>
+     <div class="float-r">float:right;</div>    
+</div>  
+
+<div class="clear-float1">
+方式一，给父元素指定高
+      <div class="float-l">float:left;</div>
+     <div class="float-r">float:right;</div>    
+</div>  
+<div >
+方式二，新加子元素，设置clear:both;
+      <div class="float-l">float:left;</div>
+     <div class="float-r">float:right;</div> 
+     <div style="clear: both;"></div>   
+</div>  
+<div class="clear-float2">
+方式三，设置父元素overflow:hidden;使其覆盖整个内容区
+      <div class="float-l">float:left;</div>
+     <div class="float-r">float:right;</div> 
+</div>  
+<div class="clear-float3">
+方式四，使用伪类方式清除浮动
+      <div class="float-l">float:left;</div>
+     <div class="float-r">float:right;</div> 
+</div>   
+<h3>二、两列布局</h3>
+<h4>1.固定宽度，两列居中布局</h4>
+<div class="wrapper">
+    <h5>例子一：float模式.        父容器固定宽度800居中，模拟显示区</h5>
+    <div class="sidebar">
+    左侧固定宽度列 200   
+    </div>
+    <div class="content">
+        右侧固定宽度列600
+    </div>
+</div>
+ <div class="wrapper">
+    <h5>例子二：   margin模式，父容器固定宽度800居中，模拟显示区</h5>
+   <div class="content4">
+           右侧固定宽度列600
+    </div>
+    <div class="sidebar4">
+        左侧固定宽度列 200   
+    </div>
+</div>
+
+<h4>2.左列固定宽度，右列自适应，两列布局</h4>
+<div class="wrapper1">
+    <h5>例子一：   父容器宽度随机，左侧固定右侧自适应</h5>
+    <div class="sidebar1">
+    左侧固定宽度列 200   
+    </div>
+    <div class="content-wap">
+        <div class="content1">
+            右侧自适应
+        </div>
+    </div>
+    <p>
+        解释下我的理解：content-wap是用来包含右侧自适应模块的，他重要的属性就是float和width：100%；<br>
+        比较难理解的是sidebar1的margin-right属性。<br>
+        页面渲染的顺序是先渲染sidebar，再渲染content，就会导致content换行，所以指定sidebar的margin-right为自身的宽度，把对应位置的空间让出来，<br>
+        理解一下下面的情况，如果把sidebar和content位置换一下<br>
+        先渲染content，再渲染sidebar应该怎么写？<br>
+    </p>
+</div>
+<div class="wrapper1">
+    <h5>例子二：父容器宽度固定，左侧固定右侧自适应</h5>
+    <div class="content-wap">
+        <div class="content1">
+            右侧自适应
+        </div>
+    </div>
+     <div class="sidebar2">
+        左侧固定宽度列 200   
+    </div>
+    <p>
+      解释：由于这次想渲染的content，就会导致slider掉下去<br>
+      所以我们需要将slider的左侧的空间清空，让他回到上一行的位置<br>
+      也就是我们要设置slider的margi-left为0 - content宽度,是一个变化的值<br>
+      所以只在固定布局时使用后置的方式，其他情况还是采取第一种方式
+    </p>
+</div>
+<h4>3.左列自适应，右列固定宽度，两列布局</h4>
+    <div class="wrapper1">
+     <h5>父容器宽度固定，左侧自适应右侧固定</h5>
+        <div class="content-wap1">
+            <div class="content5">  左侧自适应 </div>
+        </div>
+        <div class="slider5">
+                右侧固定宽度
+        </div>
+    </div>
+    <div class="wrapper1">
+     <h5>交换content和slider位置</h5>
+         <div class="slider6">
+                右侧固定宽度
+        </div>
+        <div class="content-wap1">
+            <div class="content5">  左侧自适应 </div>
+        </div>
+    </div>
+</body>
+</html>
