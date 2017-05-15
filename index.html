@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿---<!DOCTYPE html>
 <html>
 <head>
     <title>css layout</title>
@@ -130,6 +130,20 @@
       所以只在固定布局时使用后置的方式，其他情况还是采取第一种方式
     </p>
 </div>
+<div class="wrapper1">
+    <h5>例子三：父容器宽度固定，左侧固定右侧自适应直接使用margin</h5>
+    <div class="sidebar7">
+        左侧固定宽度列 200   
+    </div>
+
+    <div class="content7">
+        右侧自适应
+    </div>
+  
+    <p>
+     此方法比起-margin来简单的多。
+    </p>
+</div>
 <h4>3.左列自适应，右列固定宽度，两列布局</h4>
     <div class="wrapper1">
      <h5>父容器宽度固定，左侧自适应右侧固定</h5>
@@ -149,5 +163,78 @@
             <div class="content5">  左侧自适应 </div>
         </div>
     </div>
+<h3>三、等高布局</h3>
+<h4>1.通过背景图方式来做到模拟等高</h4>
+<h4>2.通过容器的方式实现等高布局</h4>
+<div class="autoh1">
+  <div class="autoh2">
+    <div class="autoh3">
+      <div class="autoh-l">左边</div>
+      <div class="autoh-c">中间儿</div>
+      <div class="autoh-r">右边</div>
+    </div>
+  </div>
+</div>
+<p>
+  注释：利用父元素会被子元素内最高的一个撑起来这个特点来实现等高布局
+  有多少列就要有多少包含块。设置浮动定位，来将包含块显示对应比例
+  然后将子元素右移等比例长度来实现。
+  border是为了识别元素的实际高度，下一小节处理带有border的情况
+  缺点是dom结构比较复杂混乱。
+</p>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

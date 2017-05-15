@@ -215,3 +215,73 @@ body>div{
     margin-left: -100%;
     background-color: yellow;
 }
+.sidebar7{
+    width: 200px;
+    height: 400px;
+    background-color: yellow;
+    float: left;
+}
+.content7{
+    height: 400px;
+    margin-left: 200px;
+    background-color: brown;
+}
+.autoh1{
+    float: left;
+    width: 100%;
+    background-color: yellow;
+    position: relative;
+    overflow: hidden; 
+}
+.autoh2{
+    float: left;
+    width: 100%;
+    background-color: green;
+    position: relative;
+    right: 50%;
+}
+.autoh3{
+    float: left;
+    width: 100%;
+    background-color: brown;
+    position: relative;
+    right: 20%;
+}
+.autoh-l{border-collapse:collapse; border: 1px solid #000; box-sizing: border-box; float: left;width: 30%;height: 400px;position: relative;right: -70%}
+.autoh-c{border-collapse:collapse; border: 1px solid #000; box-sizing: border-box; float: left;width: 20%;height: 200px;position: relative;right: -70%}
+.autoh-r{border-collapse:collapse; border: 1px solid #000; box-sizing: border-box; float: left;width: 50%;height: 100px;position: relative;right: -70%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
