@@ -1,6 +1,8 @@
-﻿---<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <title>css layout</title>
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -179,22 +181,124 @@
   注释：利用父元素会被子元素内最高的一个撑起来这个特点来实现等高布局
   有多少列就要有多少包含块。设置浮动定位，来将包含块显示对应比例
   然后将子元素右移等比例长度来实现。
-  border是为了识别元素的实际高度，下一小节处理带有border的情况
-  缺点是dom结构比较复杂混乱。
+  border是为了识别元素的实际高度，缺点是dom结构比较复杂混乱。
 </p>
-
-
-
-
-
-
-
-
-
-
-
+<h4>3.利用border实现的等高布局</h4>
+<div class="autoh4">
+  <div class="autoh4-l">左边</div>
+  <div class="autoh4-c">中间儿</div>
+  <div class="autoh4-r">右边</div>
+</div>
+<p>这种方式比较简单，但是问题也比较明显，就是这种方式最多只能有三列，应因为只有两个border可用</p>
+<h4>4.利用正负margin实现等高布局</h4>
+<div class="autoh5">
+  <div class="autoh5-l">左边</div>
+  <div class="autoh5-c">中间儿</div>
+  <div class="autoh5-r">右边</div>
+</div>
+<p>这种方式的原理是使用正的padding值，负的margin值来将列无限撑开，然后设置父元素的overflow：hidden来切割多余部分。他可以用来做多列布局，但是有一个缺点就是他无法显示底边</p>
+<h4>5.利用正负margin实现等高布局的基础上增加border</h4>
+<div class="autoh5" style="margin-bottom:20px;">
+  <div class="autoh5-l">左边</div>
+  <div class="autoh5-c">中间儿</div>
+  <div class="autoh5-r">右边</div>
+  <div class="autoh-border"></div>
+</div>
+<h4>6.利用定位实现等高布局</h4>
+<div class="autoh6" style="margin-bottom:20px;">
+  <div class="autoh6-l">左边</div>
+  <div class="autoh6-r">右边</div>
+</div>
+<p>这种方式简单高效，兼容性好，缺点是依旧使用了border的方式进行布局多列的效果不佳</p>
+<h4>7.使用table布局来实现等高布局</h4>
+<div class="autoh7">
+  <div class="autoh-table-row">
+    <div class="auto-table-l">左边的</div>
+    <div class="auto-table-c">中间的</div>
+    <div class="auto-table-r">右边的</div>
+  </div>
+</div>
+<p>同样比较简单的一种方式，但是在IE6，7下无法正常显示</p>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

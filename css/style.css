@@ -250,6 +250,186 @@ body>div{
 .autoh-l{border-collapse:collapse; border: 1px solid #000; box-sizing: border-box; float: left;width: 30%;height: 400px;position: relative;right: -70%}
 .autoh-c{border-collapse:collapse; border: 1px solid #000; box-sizing: border-box; float: left;width: 20%;height: 200px;position: relative;right: -70%}
 .autoh-r{border-collapse:collapse; border: 1px solid #000; box-sizing: border-box; float: left;width: 50%;height: 100px;position: relative;right: -70%}
+.autoh4{
+    display: inline-block;
+    border-left: 200px solid yellow;
+    border-right: 300px solid brown;
+    width: 600px;
+    height: 400px;
+}
+.autoh4-l{
+    width: 200px;
+    float: left;
+    height: 350px;
+    border: 1px solid #000;
+    margin-left: -200px;
+    box-sizing: border-box;
+}
+.autoh4-c{
+    width: 600px;
+    height: 300px;
+    float: left;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.autoh4-r{
+    width: 300px;
+    height: 100%;
+    float: right;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin-right: -300px;
+    
+}
+.autoh5{
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.autoh5-l{
+    background-color: yellow;
+    float: left;
+    width: 150px;
+    height: 300px;
+    border: 1px solid #000;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+    box-sizing: border-box;
+}
+.autoh5-c{
+    background-color: red;
+    float: left;
+    width: 350px;
+    border:1px solid #000;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+    box-sizing: border-box;
+}
+.autoh5-r{
+    background-color: brown;
+    float: left;
+    width: 300px;
+    margin-bottom: -99999px;
+    box-sizing: border-box;
+    padding-bottom: 99999px;
+}
+.autoh-border{
+    position: absolute;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    width:100%;
+}
+.autoh6{
+    width: 800px;
+    height: 150px;
+    margin: 0 auto;
+}
+.autoh6-l{
+    width: 300px;
+    background-color: yellow;
+    border-right: 500px solid brown;
+    height: 150px;
+    position: absolute;
+}
+.autoh6-r{
+    background-color: brown;
+    margin-left: 300px;
+    width:500px;
+    position: absolute;
+}
+.autoh7{
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    display: table;
+}
+.autoh-table-row{
+    display: table-row;
+}
+.auto-table-l{
+    display: table-cell;
+    width: 130px;
+    background-color: yellow;
+}
+.auto-table-c{
+    display: table-cell;
+    width: 430px;
+    background-color: green;
+}
+.auto-table-l{
+    display: table-cell;
+    width: 240px;
+    background-color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
