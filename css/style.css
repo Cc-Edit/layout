@@ -455,10 +455,64 @@ body>div{
     margin-left: -200px;
     background-color: brown;
 }
-
-
-
-
+.threeb{
+    width: 100%;
+    height: 300px;
+    background-color: red;
+    position: relative;
+}
+.threeb-1{
+    position: absolute;
+    background-color: yellow;
+    width: 130px;
+    top: 0;
+    height: 100%;
+    left: 0;
+}
+.threeb-2{
+    margin: 0 270px 0 130px;
+    background-color: green;
+    height: 100%;
+}
+.threeb-3{
+    position:absolute;
+    background-color: brown;
+    width: 270px;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+.threec-wa{
+    width: 100%;
+    overflow: hidden;
+}
+.threec-l{
+    float: left;
+    width: 50%;
+    height: 300px;
+    margin-left:  -100px;
+    background-color: yellow;
+}
+.threec-c{
+    width: 200px;
+    float: left;
+    height: 300px;
+    background-color: green;
+    z-index: 999;
+}
+.threec-r{
+    float: left;
+    width: 50%;
+    height: 300px;
+    margin-right:  -100px;
+    background-color: yellow;
+}
+.threec-l>div{
+     margin-left: 100px;
+}
+.threec-r>div{
+    margin-right: 100px;
+}
 
 
 
