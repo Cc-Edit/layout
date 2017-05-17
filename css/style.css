@@ -1,17 +1,15 @@
-body>div{
-    background-color: red;
-    margin: 10px 0;
-}
 /*高度100，宽度自适应*/
 .autoWidth{
     height: 100px;
     width: 100%;
+    background-color: red;
 }
 /*高度100，宽度200，实现水平居中*/
 .center-x-1{
     height: 100px;
     width: 200px;
-    margin: auto;
+    margin: 0 auto;
+    background-color: yellow;
 }
 /*使用display：inline来设置居中*/
 .center-x-2{
@@ -19,6 +17,7 @@ body>div{
     width: 100%;
     display: inline-block;
     text-align: center;
+    background-color: red;
 }
 .center-x-2-child{
     width: 200px;
@@ -32,6 +31,7 @@ body>div{
     height: 100px;
     width: 100%;
     position: relative;
+    background-color: red;
 }
 .center-x-3-child{
     width: 200px;
@@ -45,6 +45,7 @@ body>div{
 .center-x-4{
     height: 100px;
     text-align: center;
+    background-color: red;
 }
 .center-x-4-child{
     display: inline-block;
@@ -54,6 +55,7 @@ body>div{
 /*行内元素垂直居中*/
 .center-y-1{
     height: 200px;
+    background-color: red;
 }
 .center-y-1-child{
     background-color: yellow;
@@ -64,6 +66,7 @@ body>div{
 .center-y-2{
     height: 200px;
     position: relative;
+    background-color: red;
 }
 .center-y-2-child{
     width: 80px;
@@ -78,6 +81,7 @@ body>div{
 .center-y-3{
     height: 200px;
     position: relative;
+    background-color: red;
 }
 .center-y-3-child{
     width: 80px;
@@ -90,6 +94,7 @@ body>div{
 /*边距合并现象*/
 .margin-style{
     height: 200px;
+    background-color: red;
 }
 .margin-style-child{
     height: 50px;
@@ -98,6 +103,10 @@ body>div{
     background-color: yellow;
 }
 /*浮动元素*/
+.clear-float{
+    margin-bottom: 100px;
+    background-color: red;
+}
 .float-l{
     height: 100px;
     width: 100px;
@@ -110,18 +119,21 @@ body>div{
     background-color:yellow;
     float: right;
 }
-.clear-float{
-    margin-bottom: 100px;
-}
+
 /*指定元素高度清除浮动*/
 .clear-float1{
     height: 100px;
+    background-color: red;
 }
 /*设置overflow：hidden*/
 .clear-float2{
     overflow: hidden;
+    background-color: red;
 }
 /*使用伪类清除浮动*/
+.clear-float3{
+    background-color: red;
+}
 .clear-float3:after{
     clear: both;
     display: block;
@@ -247,15 +259,42 @@ body>div{
     position: relative;
     right: 20%;
 }
-.autoh-l{border-collapse:collapse; border: 1px solid #000; box-sizing: border-box; float: left;width: 30%;height: 400px;position: relative;right: -70%}
-.autoh-c{border-collapse:collapse; border: 1px solid #000; box-sizing: border-box; float: left;width: 20%;height: 200px;position: relative;right: -70%}
-.autoh-r{border-collapse:collapse; border: 1px solid #000; box-sizing: border-box; float: left;width: 50%;height: 100px;position: relative;right: -70%}
+.autoh-l{
+    border-collapse:collapse; 
+    border: 1px solid #000; 
+    box-sizing: border-box; 
+    float: left;width: 30%;
+    height: 400px;
+    position: relative;
+    right: -70%;
+}
+.autoh-c{
+    border-collapse:collapse; 
+    border: 1px solid #000; 
+    box-sizing: border-box; 
+    float: left;
+    width: 20%;
+    height: 200px;
+    position: relative;
+    right: -70%;
+}
+.autoh-r{
+    border-collapse:collapse; 
+    border: 1px solid #000; 
+    box-sizing: border-box; 
+    float: left;
+    width: 50%;
+    height: 100px;
+    position: relative;
+    right: -70%;
+}
 .autoh4{
     display: inline-block;
     border-left: 200px solid yellow;
     border-right: 300px solid brown;
     width: 600px;
     height: 400px;
+    background-color: red;
 }
 .autoh4-l{
     width: 200px;
@@ -360,7 +399,7 @@ body>div{
     width: 430px;
     background-color: green;
 }
-.auto-table-l{
+.auto-table-r{
     display: table-cell;
     width: 240px;
     background-color: brown;
@@ -392,19 +431,19 @@ body>div{
     height: 300px;
     margin: 20px auto;
 }
-.three-1{
+.three-l{
     width: 200px;
     background-color: yellow;
     height: 300px;
     float: left;
 }
-.three-2{
+.three-c{
     width: 100px;
     background-color: green;
     height: 300px;
     float: left;
 }
-.three-3{
+.three-r{
     width: 500px;
     background-color: brown;
     height: 300px;
@@ -417,16 +456,16 @@ body>div{
     margin: 20px auto;
     min-width: 420px;
 }
-.threea-1{
+.threea-l{
     width: 200px;
     height: 300px;
     background-color: yellow;
     float: left;
 }
-.threea-2{
+.threea-c{
     margin: 0 200px;
 }
-.threea-3{
+.threea-r{
     width: 200px;
     height: 300px;
     background-color: brown;
@@ -461,7 +500,7 @@ body>div{
     background-color: red;
     position: relative;
 }
-.threeb-1{
+.threeb-l{
     position: absolute;
     background-color: yellow;
     width: 130px;
@@ -469,12 +508,12 @@ body>div{
     height: 100%;
     left: 0;
 }
-.threeb-2{
+.threeb-c{
     margin: 0 270px 0 130px;
     background-color: green;
     height: 100%;
 }
-.threeb-3{
+.threeb-r{
     position:absolute;
     background-color: brown;
     width: 270px;
