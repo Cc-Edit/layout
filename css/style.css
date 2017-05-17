@@ -519,9 +519,55 @@ body>div{
 .threed-l{flex: 1;height: 300px;background-color: yellow;}
 .threed-c{width: 200px;height: 300px;background-color: green;}
 .threed-r{flex: 1;height: 300px;background-color: brown;}
-
-
-
+.sb-wp{
+    padding: 0 200px;
+    height: 300px;
+}
+.sb-l{
+    width: 200px;
+    background-color: yellow;
+    height: 300px;
+    float: left;
+    margin-left: -100%;
+    position: relative;
+    left: -200px;
+}
+.sb-c{
+    width: 100%;
+    height: 300px;
+    float: left;
+    background-color: red;
+}
+.sb-r{
+    width: 200px;
+    background-color: brown;
+    height: 300px;
+    float: left;
+    margin-left:-200px;
+}
+.sbs-l{
+    width: 200px;
+    background-color: yellow;
+    height: 300px;
+    float: left;
+    margin-left: -100%;
+}
+.sbs-c{
+    width: 100%;
+    height: 300px;
+    float: left;
+    background-color: red;
+}
+.sbs-r{
+    width: 200px;
+    background-color: brown;
+    height: 300px;
+    float: left;
+    margin-left:-200px;
+}
+.sbs-main{
+    margin: 0 200px;
+}
 
 
 

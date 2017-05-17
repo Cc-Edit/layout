@@ -254,6 +254,9 @@
   </div>
   <div class="test-r">right</div>
 </div>
+<h4>2.  左侧自适应，右侧定宽两列布局</h4>
+<h4>3.  左中定宽，右侧自适应</h4>
+<h4>1.  左侧自适应，右中定宽</h4>
 <h3>五.三列布局</h3>
 <h4>1.固定宽度三列布局</h4>
 <div class="three">
@@ -304,6 +307,24 @@
   <div class='threed-r'>右边儿</div>
 </div>
 <p>flex布局比较简单，但是会有兼容问题。</p>
+<h3>五.圣杯布局&双飞翼布局</h3>
+<p>圣杯布局和双飞翼布局都是三列布局其中的左右定宽，中间自适应</p>
+<h4>1.圣杯布局：06年提出，利用动、负边距、相对定位来实现</h4>
+<div class="sb-wp">
+  <div class="sb-c">中间儿</div>
+  <div class="sb-l">左边儿</div>
+  <div class="sb-r">右边儿</div>
+</div>
+<p>解释：首先是对所有元素加浮动，使其纵向排列，第一行是中间列。左右列排在下方，第二步对左右列进行margin正负定位，结果左右列覆盖到了中间列之上，再使用relative来进行偏移</p>
+<h4>1.双飞翼布局：淘宝UED改良圣杯布局结果</h4>
+<div>
+  <div class="sbs-c">
+    <div class="sbs-main">中间儿</div>
+  </div>
+  <div class="sbs-l">左边儿</div>
+  <div class="sbs-r">右边儿</div>
+</div>
+<p>双飞翼对比圣杯布局，主要是中间部分如何防止遮挡，圣杯使用relative定位，双飞翼是对中间列增加子元素，通过设置子元素的margin值来达到不被遮挡，使整个方案更灵活简便。</p>
 </body>
 </html>
 
